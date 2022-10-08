@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+.content-wrapper {
+    gap: 6rem;
+    height: 100vh;
+}
+
+.timer-wrapper {
+    gap: 2rem;
+    max-height: 21.4rem;
+}
+
+.timer-display {
+    color: #323238;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12.6rem;
+    font-weight: 500;
+    line-height: 14.8rem;
+    text-align: center;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 4rem;
+}
+
+.content-wrapper,
+.timer-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timer-controls button {
+    transition: all .2s ease-out;
+}
+
+.timer-controls button:hover {
+    transform: scale(1.05);
+}
+
+.timer-controls button:active {
+    transform: scale(.95);
+}
+
+.buttons-wrapper {
+    display: grid;
+    gap: 3.2rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+button {
+    background: none;
+    border: 0;
+}
+
+.buttons-wrapper button {
+    border-radius: 2.4rem;
+    padding: 4rem;
+    transition: all .5s ease-out;
+}
+
+.buttons-wrapper button:hover {
+    background-color: #aeaeb3;
+}
+
+.isPlaying {
+    background-color: #02799d93;
+}
+
+.isPaused {
+    background-color: #E1E1E6;
+}
+
+
+
+@media screen and (min-width: 1200px) {
+    .content-wrapper {
+        flex-direction: row;
+        gap: 19.2rem
+    }
+}
